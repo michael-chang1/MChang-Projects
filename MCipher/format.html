@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Substitution Cipher</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1> MCipher </h1>
+        <h3>Encrypt or decrypt a message using the MCipher!</h3>
+
+        <div class="inputs">
+            <label>Input Message:</label>
+            <textarea id="userInput" placeholder="Type message here..."></textarea>
+        </div>
+
+        <div class="buttons">
+            <button onclick="encrypt()" class="btn-enc">Encrypt</button>
+            <button onclick="decrypt()" class="btn-dec">Decrypt</button>
+            <button onclick="viewKey()" class="btn-viewK">View Key</button>
+            <!-- 
+                If you wanted to make it a randomized key use button below.
+                <button onclick="resetKey()" class="btn-reset">New Key</button>
+            -->
+        </div>
+
+        <div class="display">
+            <label>Result:</label>
+            <div class="result">
+                <div id="outputText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mCipher.js"></script>
+</body>
+</html>
